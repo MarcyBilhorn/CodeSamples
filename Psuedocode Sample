@@ -1,0 +1,19 @@
+Psuedocode for DnDSite/addCharacter.php
+
+IF form is submitted
+  GET form data values
+  IF class = Rogue
+    INSTANTIATE Rogue
+  ELSE IF class = Fighter
+    INSTANTIATE Fighter
+  END IF
+  IF other characters have same name
+    DISPLAY Error
+  ELSE IF character name is null
+    DISPLAY Error
+  ELSE
+    SET class variables
+    ADD character to database
+    RETURN to view all page
+  END IF
+END IF
